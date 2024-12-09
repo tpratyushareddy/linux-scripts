@@ -13,7 +13,9 @@ function show_stats() {
     
     # Disk Usage
     echo "Disk Usage: $(df -h | grep '/$' | awk '{print $5}')"
-   
+    
+    #Top Process 
+    echo "Top process: $(ps -eo pid,comm,%mem,%cpu --sort=%cpu | head -n 6)"
 }
 
 # Prompt user to specify how many times to display stats
