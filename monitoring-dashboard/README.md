@@ -7,7 +7,9 @@ This shell script provides a way to monitor system statistics interactively. It 
 - **CPU Usage**: Displays real-time CPU utilization as a percentage.
 - **Memory Usage**: Shows memory usage as a percentage of total memory.
 - **Disk Usage**: Reports the usage of the root partition.
-- **Top Processes**: Lists the top five processes consuming the most CPU.
+- **Top Processes**: Lists the top three processes consuming the most CPU and memory. 
+- Helps with capacity planning. 
+- Helps with identifying areas where performance could be improved. 
 
 ## Requirements
 
@@ -25,7 +27,7 @@ This shell script provides a way to monitor system statistics interactively. It 
 1. Interval: The statistics refresh every 2 seconds. You can adjust this by modifying the sleep 2 line in the script.
 2. Number of processes: The script lists the top 5 processes by default. Change the head -n 6 command in the show_stats function to display more or fewer processes.
 
-##Troubleshooting
+## Troubleshooting
 
 1. If the script fails to run:
 2. Ensure bash is installed and accessible.
